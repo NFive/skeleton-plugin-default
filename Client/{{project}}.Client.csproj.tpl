@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{932D461F-A343-4849-BAF0-91DA16205088}</ProjectGuid>
+    <ProjectGuid>{{clientprojectguid}}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Acme.Foo.Client</RootNamespace>
-    <AssemblyName>Acme.Foo.Client.net</AssemblyName>
+    <RootNamespace>{{org}}.{{project}}.Client</RootNamespace>
+    <AssemblyName>{{org}}.{{project}}.Client.net</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -61,15 +61,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FooService.cs" />
+    <Compile Include="{{project}}Service.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Foo.Shared\Foo.Shared.csproj">
-      <Project>{932d461f-a343-4849-baf0-91da16205088}</Project>
-      <Name>Foo.Shared</Name>
+    <ProjectReference Include="..\Shared\{{project}}.Shared.csproj">
+      <Project>{{sharedprojectguid}}</Project>
+      <Name>{{project}}.Shared</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>

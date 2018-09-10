@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BB311EEC-B057-401A-AA88-C783B0CFB41E}</ProjectGuid>
+    <ProjectGuid>{{serverprojectguid}}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Acme.Foo.Server</RootNamespace>
-    <AssemblyName>Acme.Foo.Server.net</AssemblyName>
+    <RootNamespace>{{org}}.{{project}}.Server</RootNamespace>
+    <AssemblyName>{{org}}.{{project}}.Server.net</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -79,16 +79,16 @@
     <Compile Include="Configuration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FooController.cs" />
+    <Compile Include="{{project}}Controller.cs" />
     <Compile Include="Storage\StorageContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Foo.Shared\Foo.Shared.csproj">
-      <Project>{932d461f-a343-4849-baf0-91da16205088}</Project>
-      <Name>Foo.Shared</Name>
+    <ProjectReference Include="..\Shared\{{project}}.Shared.csproj">
+      <Project>{{sharedprojectguid}}</Project>
+      <Name>{{project}}.Shared</Name>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>

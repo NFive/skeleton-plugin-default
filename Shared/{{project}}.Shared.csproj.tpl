@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B2C7250A-32C5-4868-AEB7-ECDABAC886D5}</ProjectGuid>
+    <ProjectGuid>{{sharedprojectguid}}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Acme.Foo.Shared</RootNamespace>
-    <AssemblyName>Acme.Foo.Shared.net</AssemblyName>
+    <RootNamespace>{{org}}.{{project}}.Shared</RootNamespace>
+    <AssemblyName>{{org}}.{{project}}.Shared.net</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -52,7 +52,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Foo.cs" />
+    <Compile Include="{{project}}.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
