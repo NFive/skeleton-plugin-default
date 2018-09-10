@@ -1,8 +1,8 @@
-﻿using System.Data.Entity;
+using System.Data.Entity;
 using NFive.SDK.Core.Models.Player;
 using NFive.SDK.Server.Storage;
 
-namespace {{org}}.{{project}}.Storage
+namespace {{org}}.{{project}}.Server.Storage
 {
 	public class StorageContext : EFContext<StorageContext>
 	{

@@ -1,8 +1,8 @@
-﻿using JetBrains.Annotations;
+using JetBrains.Annotations;
 using NFive.SDK.Server.Migrations;
-using {{org}}.{{project}}.Storage;
+using {{org}}.{{project}}.Server.Storage;
 
-namespace {{org}}.{{project}}.Migrations
+namespace {{org}}.{{project}}.Server.Migrations
 {
 	[UsedImplicitly]
 	public sealed class Configuration : MigrationConfiguration<StorageContext> { }
