@@ -2,17 +2,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{{solutionitemsguid}}") = "Solution Items", "Solution Items", "{{projectguid}}"
+	ProjectSection(SolutionItems) = preProject
+		nfive.yml = nfive.yml
+	EndProjectSection
+EndProject
 {{ if client }}Project("{{solutionguid}}") = "{{project}}.Client", "Client\{{project}}.Client.csproj", "{{clientprojectguid}}"
 EndProject{{ end }}
 {{ if server }}Project("{{solutionguid}}") = "{{project}}.Server", "Server\{{project}}.Server.csproj", "{{serverprojectguid}}"
 EndProject{{ end }}
 {{ if shared }}Project("{{solutionguid}}") = "{{project}}.Shared", "Shared\{{project}}.Shared.csproj", "{{sharedprojectguid}}"
 EndProject{{ end }}
-Project("{{solutionguid}}") = "Solution Items", "Solution Items", "{{projectguid}}"
-	ProjectSection(SolutionItems) = preProject
-		nfive.yml = nfive.yml
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,11 +31,5 @@ Global
 		{{sharedprojectguid}}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{{sharedprojectguid}}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{{sharedprojectguid}}.Release|Any CPU.Build.0 = Release|Any CPU{{ end }}
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B5BF5980-94A6-45DE-9448-C3E111B14939}
 	EndGlobalSection
 EndGlobal
