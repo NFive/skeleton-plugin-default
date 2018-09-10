@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{{solutionitemsguid}}") = "Solution Items", "Solution Items", "{{projectguid}}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{{projectguid}}"
 	ProjectSection(SolutionItems) = preProject
 		nfive.yml = nfive.yml
 	EndProjectSection
