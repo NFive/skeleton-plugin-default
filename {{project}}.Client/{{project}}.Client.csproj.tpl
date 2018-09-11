@@ -65,8 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-{{ if shared }}  <ItemGroup>
+  </ItemGroup>{{ if shared }}
+  <ItemGroup>
     <ProjectReference Include="..\Shared\{{project}}.Shared.csproj">
       <Project>{{sharedprojectguid}}</Project>
       <Name>{{project}}.Shared</Name>
