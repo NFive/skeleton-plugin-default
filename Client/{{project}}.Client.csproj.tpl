@@ -66,12 +66,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
+{{ if shared }}  <ItemGroup>
     <ProjectReference Include="..\Shared\{{project}}.Shared.csproj">
       <Project>{{sharedprojectguid}}</Project>
       <Name>{{project}}.Shared</Name>
       <Private>False</Private>
     </ProjectReference>
-  </ItemGroup>
+  </ItemGroup>{{ end }}
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
