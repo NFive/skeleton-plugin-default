@@ -1,4 +1,4 @@
-﻿namespace Acme.Foo.Shared
+﻿namespace {{org}}.{{project}}.Shared
 {
 	public class Foo
 	{
