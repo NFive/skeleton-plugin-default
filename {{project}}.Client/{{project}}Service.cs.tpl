@@ -12,6 +12,7 @@ using {{org}}.{{project}}.Client.Overlays;
 {{ if shared }}
 using {{org}}.{{project}}.Shared;
 {{ end }}
+
 namespace {{org}}.{{project}}.Client
 {
 	[PublicAPI]
@@ -35,6 +36,7 @@ namespace {{org}}.{{project}}.Client
 			// Update local configuration on server configuration change
 			this.Rpc.Event({{project}}Events.Configuration).On<Configuration>((e, c) => this.config = c);
 			{{ end }}
+
 			// Create overlay
 			this.overlay = new {{project}}Overlay(this.OverlayManager);
 
