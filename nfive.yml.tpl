@@ -2,7 +2,7 @@ name: {{orgorig}}/{{projectorig}}
 version: 1.0.0
 description: {{desc}}
 author: {{orgorig}}
-license: LGPL-3.0-only{{ if server }}
+license: LGPL-3.0-or-later{{ if server }}
 server:
   main:
     - {{org}}.{{project}}.Server{{ if shared }}
