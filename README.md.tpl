@@ -1,6 +1,6 @@
 # {{orgorig}} {{projectorig}} NFive Plugin
 [![License](https://img.shields.io/github/license/{{orgorig}}/{{projectorig}}.svg)](LICENSE)
-[![Build Status](https://img.shields.io/appveyor/ci/{{orgorig}}/{{projectorig}}.svg)](https://ci.appveyor.com/project/{{orgorig}}/{{projectorig}})
+[![Build Status](https://img.shields.io/appveyor/ci/{{orgorig}}/{{projectorig}}/master.svg)](https://ci.appveyor.com/project/{{orgorig}}/{{projectorig}})
 [![Release Version](https://img.shields.io/github/release/{{orgorig}}/{{projectorig}}/all.svg)](https://github.com/{{orgorig}}/{{projectorig}}/releases)
 
 {{desc}}
