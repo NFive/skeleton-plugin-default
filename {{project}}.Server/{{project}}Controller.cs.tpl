@@ -10,7 +10,7 @@ namespace {{org}}.{{project}}.Server
 	[PublicAPI]
 	public class {{project}}Controller : ConfigurableController<Configuration>
 	{
-		public {{project}}Controller(ILogger logger, ICommunicationManager comms, IRconManager rcon, Configuration configuration) : base(logger, configuration)
+		public {{project}}Controller(ILogger logger, Configuration configuration, ICommunicationManager comms, IRconManager rcon) : base(logger, configuration)
 		{
 			// Send configuration when requested
 			comms.Event({{project}}Events.Configuration).FromClients().OnRequest(e => e.Reply(this.Configuration));
