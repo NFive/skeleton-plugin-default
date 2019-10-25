@@ -38,7 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CitizenFX.Core.Server, Version=0.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\CitizenFX.Core.Server.1.0.1636\lib\net45\CitizenFX.Core.Server.dll</HintPath>
+      <HintPath>..\packages\CitizenFX.Core.Server.1.0.1655\lib\net45\CitizenFX.Core.Server.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -65,12 +65,12 @@
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="NFive.SDK.Core.net, Version=0.1.0.50, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NFive.SDK.Core.0.1.0.50\lib\net452\NFive.SDK.Core.net.dll</HintPath>
+    <Reference Include="NFive.SDK.Core.net, Version=0.1.0.52, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NFive.SDK.Core.0.1.0.52\lib\net452\NFive.SDK.Core.net.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="NFive.SDK.Server.net, Version=0.1.0.70, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NFive.SDK.Server.0.1.0.70\lib\net452\NFive.SDK.Server.net.dll</HintPath>
+    <Reference Include="NFive.SDK.Server.net, Version=0.1.0.74, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NFive.SDK.Server.0.1.0.74\lib\net452\NFive.SDK.Server.net.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="NGettext, Version=0.6.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -83,8 +83,12 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="Z.EntityFramework.Plus.EF6, Version=1.10.3.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Z.EntityFramework.Plus.EF6.1.10.3\lib\net45\Z.EntityFramework.Plus.EF6.dll</HintPath>
+    <Reference Include="Z.EntityFramework.Extensions, Version=4.0.11.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.EntityFramework.Extensions.4.0.11\lib\net45\Z.EntityFramework.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Z.EntityFramework.Plus.EF6, Version=1.11.0.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.EntityFramework.Plus.EF6.1.11.0\lib\net45\Z.EntityFramework.Plus.EF6.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

@@ -4,8 +4,6 @@ namespace {{org}}.{{project}}.Client.Overlays
 {
 	public class {{project}}Overlay : Overlay
 	{
-		public {{project}}Overlay(OverlayManager manager) : base(manager) { }
-
-		public override dynamic Ready() => null;
+		public {{project}}Overlay(IOverlayManager manager) : base(manager) { }
 	}
 }

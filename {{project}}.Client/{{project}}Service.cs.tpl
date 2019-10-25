@@ -19,7 +19,7 @@ namespace {{org}}.{{project}}.Client
 		private Configuration config;{{ end }}
 		private {{project}}Overlay overlay;
 
-		public {{project}}Service(ILogger logger, ITickManager ticks, ICommunicationManager comms, ICommandManager commands, OverlayManager overlay, User user) : base(logger, ticks, comms, commands, overlay, user) { }
+		public {{project}}Service(ILogger logger, ITickManager ticks, ICommunicationManager comms, ICommandManager commands, IOverlayManager overlay, User user) : base(logger, ticks, comms, commands, overlay, user) { }
 
 		public override async Task Started()
 		{ {{- if shared }}
